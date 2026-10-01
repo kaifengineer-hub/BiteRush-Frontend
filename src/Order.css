@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f4ef;
+  font-family: "Poppins", sans-serif;
+}
+
+.order-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.order-title {
+  text-align: center;
+  font-size: 40px;
+  color: #d62828;
+  margin-bottom: 35px;
+}
+
+.order-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+  transition: .3s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,.18);
+}
+
+.order-card img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.order-info {
+  flex: 1;
+}
+
+.order-info h2 {
+  color: #222;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.order-info h3 {
+  margin: 8px 0;
+  color: #555;
+}
+
+.price {
+  color: #d62828;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.total {
+  color: #2e7d32;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.rating {
+  color: #ff9800;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.status {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 18px;
+  background: #2e7d32;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .order-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .order-card img {
+    width: 220px;
+    height: 220px;
+  }
+}

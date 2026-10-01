@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+}
+
+.form-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background: linear-gradient(rgba(0,0,0,.78), 
+  rgba(0,0,0,.78)),
+   url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80");
+   background-size: cover; background-position: center; 
+   background-repeat: no-repeat;
+}
+
+.form {
+    width: 420px;
+    background: #1c1c1c;
+    border: 2px solid #f7c600;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 0 25px rgba(247, 198, 0, 0.35);
+}
+
+.form h1 {
+    text-align: center;
+    color: #f7c600;
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    color: #f7c600;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px;
+    background: #2b2b2b;
+    color: white;
+    border: 2px solid #f7c600;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input::placeholder {
+    color: #a8a8a8;
+}
+
+.input-group input:focus {
+    border-color: #fff;
+    box-shadow: 0 0 12px rgba(247, 198, 0, 0.8);
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #f7c600;
+    color: #111;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ffd93d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(247, 198, 0, 0.45);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 500px) {
+    .form {
+        width: 92%;
+        padding: 25px;
+    }
+
+    .form h1 {
+        font-size: 2rem;
+    }
+}
